@@ -363,56 +363,199 @@
                     <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            Coupon Add
+                            Coupon Details
                         </div>
                         <div class="card-body row">
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="usr">Order ID</label>
+                                    <input type="text" class="form-control" id="usr" disabled placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usr">Date</label>
+                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usr">Note</label>
+                                    <input type="text" class="form-control" id="usr" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usr">Created user</label>
+                                    <input type="number" class="form-control" id="usr" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usr">Table name</label>
+                                    <input type="number" class="form-control" id="usr" disabled>
+                                </div>
+                                <div class="form-group">
                                     <label for="usr">Coupon code</label>
-                                    <input type="text" class="form-control" id="usr">
+                                    <input type="number" class="form-control" id="usr" disabled>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usr">Quantity</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Point amount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">User Type</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Start date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Discount value</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Discount percentage</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Minimum order</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Maximum discount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">End date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
+                                    <label for="usr">Payment method</label>
+                                    <input type="number" class="form-control" id="usr" disabled>
                                 </div>
                                 
                             </div>
-                            <div class="col-md-12 mt-2">
-                                <button type="button" class="btn btn-primary btn-block">Add New Coupon</button>
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered"  width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Created By</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                       
+                                        <tbody>
+                                            <tr>
+                                                <td>16/06/2023 22:03:57</td>
+                                                <td>Sent</td>
+                                                <td>Pham Toan</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Product name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                                <th>&nbsp;</th>
+                                                <th>Amount: 99999</th>
+                                        </tfoot>
+                                        <tbody>
+    
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cà phê muối</td>
+                                                <td>15000</td>
+                                                <td>2</td>
+                                                <td>30000</td>
+                                            </tr>
+
+    
+                                            
+                                            
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -9,20 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Product Management</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 
 </head>
 
@@ -104,14 +103,13 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Pages</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="login.html">Login</a>
@@ -120,7 +118,7 @@
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -133,7 +131,7 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
@@ -160,9 +158,11 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                    <form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </form>
 
                     <!-- Topbar Search -->
                     <form
@@ -272,7 +272,8 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -283,7 +284,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -294,7 +296,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -326,7 +329,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -360,78 +364,79 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">
-                        <a href="couponManagement.html" class="btn btn-secondary btn-icon-split mt-2">
-                            <span class="icon text-white-50">
-                                <i class="fas fa-backward"></i>
-                            </span>
-                            <span class="text font-weight-bold">Coupon Management</span>
-                        </a>
-                    </h1>
+                    <h1 class="h3 mb-2 text-gray-800">Employee Management</h1>
+
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            Coupon Add
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables</h6>
                         </div>
-                        <div class="card-body row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Coupon code</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Quantity</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Point amount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">User Type</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Start date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="sel1">Status</label>
+                                        <select class="form-control" id="sel1">
+                                            <option>All Employee</option>
+                                            <option>Working</option>
+                                            <option>Ended</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Discount value</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Discount percentage</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Minimum order</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Maximum discount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">End date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-12 mt-2">
-                                <button type="button" class="btn btn-primary btn-block">Add New Coupon</button>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Email</th>
+                                            <th>Start Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="employeeDetails.html" class="font-weight-bold">Nguyen Van A</a>
+                                            </td>
+                                            <td>abc123.store@gmail.com</td>
+                                            <td>16/06/2023 22:03:57</td>
+                                            <td><i class="fas fa-check-circle"></i> On Working</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="employeeDetails.html" class="font-weight-bold">Nguyen Van A</a>
+                                            </td>
+                                            <td>abc123.store@gmail.com</td>
+                                            <td>16/06/2023 22:03:57</td>
+                                            <td><i class="fas fa-exclamation-circle"></i> End</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="employeeDetails.html" class="font-weight-bold">Nguyen Van A</a>
+                                            </td>
+                                            <td>abc123.store@gmail.com</td>
+                                            <td>16/06/2023 22:03:57</td>
+                                            <td><i class="fas fa-check-circle"></i> On Working</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="employeeDetails.html" class="font-weight-bold">Nguyen Van A</a>
+                                            </td>
+                                            <td>abc123.store@gmail.com</td>
+                                            <td>16/06/2023 22:03:57</td>
+                                            <td><i class="fas fa-exclamation-circle"></i> End</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                        
                     </div>
-
-
-
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -472,6 +477,7 @@
             </div>
         </div>
     </div>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -488,6 +494,9 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <!-- Delete product js -->
+    <script src="js/deleteProduct.js"></script>
 
 </body>
 

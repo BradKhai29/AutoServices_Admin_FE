@@ -361,34 +361,29 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">
-                        <a href="couponManagement.html" class="btn btn-secondary btn-icon-split mt-2">
+                        <a href="employeeManagement.html" class="btn btn-secondary btn-icon-split mt-2">
                             <span class="icon text-white-50">
                                 <i class="fas fa-backward"></i>
                             </span>
-                            <span class="text font-weight-bold">Coupon Management</span>
+                            <span class="text font-weight-bold">Employee Management</span>
                         </a>
                     </h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            Coupon Add
+                            Employee Details
                         </div>
                         <div class="card-body row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="usr">Coupon code</label>
+                                    <label for="usr">Full Name</label>
                                     <input type="text" class="form-control" id="usr">
                                 </div>
                                 <div class="form-group">
-                                    <label for="usr">Quantity</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Point amount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">User Type</label>
-                                    <input type="number" class="form-control" id="usr">
+                                    <label for="role">Role</label>
+                                    <select class="form-control" id="role">
+                                        <option>Admin</option>
+                                        <option>Employee</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="usr">Start date</label>
@@ -397,29 +392,21 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="usr">Discount value</label>
-                                    <input type="number" class="form-control" id="usr">
+                                    <label for="usr">Username</label>
+                                    <input type="number" class="form-control" id="usr" disabled>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usr">Discount percentage</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Minimum order</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Maximum discount</label>
+                                    <label for="usr">Email</label>
                                     <input type="number" class="form-control" id="usr">
                                 </div>
                                 <div class="form-group">
                                     <label for="usr">End date</label>
                                     <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
                                 </div>
-                                
                             </div>
                             <div class="col-md-12 mt-2">
-                                <button type="button" class="btn btn-primary btn-block">Add New Coupon</button>
+                                <button type="button" class="font-weight-bold btn btn-warning btn-block">Update</button>
+                                <button type="button" class="font-weight-bold btn btn-danger btn-block">Lay Off</button>
                             </div>
                         </div>
                     </div>

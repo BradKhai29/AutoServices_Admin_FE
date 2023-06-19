@@ -358,80 +358,54 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">
-                        <a href="couponManagement.html" class="btn btn-secondary btn-icon-split mt-2">
+                        <a href="tableManagement.html" class="btn btn-secondary btn-icon-split mt-2">
                             <span class="icon text-white-50">
                                 <i class="fas fa-backward"></i>
                             </span>
-                            <span class="text font-weight-bold">Coupon Management</span>
+                            <span class="text font-weight-bold">Table Management</span>
                         </a>
                     </h1>
-                    <div class="card shadow mb-4">
+                    <section class="card shadow mb-4">
                         <div class="card-header py-3">
-                            Coupon Add
+                            <h6 class="m-0 font-weight-bold text-primary">Product Details</h6>
                         </div>
                         <div class="card-body row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="usr">Coupon code</label>
+                                    <label for="usr">Table Name</label>
                                     <input type="text" class="form-control" id="usr">
                                 </div>
                                 <div class="form-group">
-                                    <label for="usr">Quantity</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Point amount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">User Type</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Start date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
+                                    <label for="comment">Table Code</label>
+                                    <input type="text" class="form-control" id="comment">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="usr">Discount value</label>
-                                    <input type="number" class="form-control" id="usr">
+                                <div class="form-group h-75">
+                                    <label class="d-none d-md-block" style="opacity: 0;">Hidden</label>
+                                    <div class="bg-gray-300 border border-dark rounded text-center" style="border: 2.4px dotted!important;">
+                                        <label for="image-upload" id="preview-upload">
+                                            <span class="text-dark">
+                                                <i class="fas fa-upload h1 py-3"></i>
+                                            </span>
+                                            <div class="py-3">
+                                                Select a image or drag here
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="usr">Discount percentage</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Minimum order</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">Maximum discount</label>
-                                    <input type="number" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usr">End date</label>
-                                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"  class="form-control">
-                                </div>
-                                
                             </div>
                             <div class="col-md-12 mt-2">
-                                <button type="button" class="btn btn-primary btn-block">Add New Coupon</button>
+                                <button type="button" class="btn btn-warning font-weight-bold btn-block">Update</button>
+                                <button type="button" class="btn btn-danger font-weight-bold btn-block">Delete</button>
                             </div>
                         </div>
-                    </div>
-
-
-
+                    </section>
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -472,22 +446,23 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+     <!-- Bootstrap core JavaScript-->
+     <script src="js/upload-img.js"></script>
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+     <!-- Core plugin JavaScript-->
+     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+ 
+     <!-- Custom scripts for all pages-->
+     <script src="js/sb-admin-2.min.js"></script>
+ 
+     <!-- Page level plugins -->
+     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+ 
+     <!-- Page level custom scripts -->
+     <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

@@ -360,23 +360,25 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Category</h1>
+                    <h1 class="h3 mb-4 text-gray-800">
+                        <a href="categoryManagement.html" class="btn btn-secondary btn-icon-split mt-2">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-backward"></i>
+                            </span>
+                            <span class="text font-weight-bold">Category Management</span>
+                        </a>
+                    </h1>
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
+                        <div class="card-header font-weight-bold text-primary py-3">
                             Add Category
                         </div>
                         <div class="card-body row">
-                            <div class="input-group mb-3 col-md-8">
-                                <input type="text" class="form-control">
-                                <div class="input-group-append">
-                                  <button class="btn btn-success" type="submit">Add new category</button>
-                                </div>
-                              </div>
+                            <form class="mb-3 col-12">
+                                <input type="text" class="form-control w-100" placeholder="Category name">
+                                <button class="mt-3 font-weight-bold btn btn-success btn-block" type="submit">Add new category</button>
+                            </form>
                         </div>
                     </div>
-
-                   
-
                 </div>
                 <!-- /.container-fluid -->
 

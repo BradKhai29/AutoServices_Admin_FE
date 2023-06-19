@@ -368,11 +368,28 @@
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables</h6>
-                            <a href="" class="btn btn-danger mt-2">Add New Coupon</a>
+                        <div class="card-header py-3 d-flex flex-column flex-md-row justify-content-between">
+                            <div class="h5 font-weight-bold text-primary align-self-center">Coupon Management</div>
+                            <a href="couponAdd.html" class="d-flex justify-content-between btn btn-success btn-icon-split mt-2">
+                                <span class="text">Create</span>
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </a>
                         </div>
                         <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="sel1">Status</label>
+                                        <select class="form-control" id="sel1">
+                                            <option>All Coupon</option>
+                                            <option>Using</option>
+                                            <option>Ended</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>

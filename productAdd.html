@@ -180,7 +180,6 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -352,21 +351,25 @@
                         </li>
 
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">
+                        <a href="productManagement.html" class="btn btn-secondary btn-icon-split mt-2">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-backward"></i>
+                            </span>
+                            <span class="text font-weight-bold">Product Management</span>
+                        </a>
+                    </h1>
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            Product details
+                        <div class="card-header py-3 font-weight-bold">
+                            Create Product
                         </div>
                         <div class="card-body row">
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="usr">Name</label>
                                     <input type="text" class="form-control" id="usr">
@@ -389,19 +392,36 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="height: 20rem; background-color: darkgray;">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="d-none d-md-block" style="opacity: 0;">Hidden</label>
+                                    <input type="file" onchange="LoadFile(event)" class="form-control" id="image-upload" accept="image/*" hidden>
+                                    <div class="border border-dark rounded text-center" style="border: 2.4px dotted!important;">
+                                        <img src="" class="d-inline-block w-100" alt="" id="preview-img">
+                                        <label for="image-upload" id="preview-upload">
+                                            <span class="text-dark">
+                                                <i class="fas fa-upload h1 py-3"></i>
+                                            </span>
+                                            <div class="py-3">
+                                                Select a image or drag here
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <label for="image-upload" class="mt-4 d-flex justify-content-between font-weight-bold btn btn-secondary btn-icon-split btn-block">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-upload"></i>
+                                        </span>
+                                        <span class="text w-100">Upload product image</span>
+                                    </label>
+                                </div>
                             </div>
                             <div class="col-md-12 mt-2">
                                 <button type="button" class="btn btn-primary btn-block">Add New Product</button>
                             </div>
                         </div>
                     </div>
-
-                   
-
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
@@ -446,6 +466,7 @@
         </div>
     </div>
      <!-- Bootstrap core JavaScript-->
+     <script src="js/upload-img.js"></script>
      <script src="vendor/jquery/jquery.min.js"></script>
      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
  

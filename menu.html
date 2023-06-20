@@ -191,13 +191,17 @@
                     </ul>
                 </nav>
                 <!-- End of Topbar -->
-                <div id="hideOrder">f</div>
-                <section id="order-sidebar" class="shadow vh-100 position-fixed fixed-top bg-gradient-dark">
+
+                <!-- Begin Order Siderbar -->
+                <div id="hideOrder">.</div>
+                <section id="order-sidebar" class="shadow vh-100 position-fixed bg-gradient-dark">
                     <div class="h-100 position-relative">
                         <section class="order-header h-auto" onclick="HideOrder();">
                             <a class="text-decoration-none py-2 d-flex justify-content-between mb-0 bg-primary text-white h2">
                                 <i class="pl-3 fas fa-fw fa-angle-double-right"></i>
-                                <h4 class="mb-0 pr-3">Cart Details</h4>
+                                <h4 class="mb-0 pr-3">
+                                    <span class="font-weight-bold">Cart Details</span>
+                                </h4>
                             </a>
                         </section>
                         <ul class="order-main mt-4 mb-0 px-3">
@@ -205,14 +209,14 @@
                                 <a class="text-decoration-none py-2 d-flex justify-content-between mb-0 text-white">
                                     <div class="d-flex flex-column item-content">
                                         <span>1. <span class="item-name">Egg Creamy Coffee Latte</span></span>
-                                        <span>$ <span class="item-price">50.000</span></span>
+                                        <span>$ <span class="item-price">50000</span></span>
                                     </div>
-                                    <div class="btn-group flex-shrink-1 item-action" role="group" aria-label="Basic example">
-                                        <button type="button" class="py-0 btn btn-secondary">
+                                    <div class="btn-group flex-shrink-1 item-action" role="group">
+                                        <button type="button" class="item-minus btn btn-secondary py-0 ">
                                             <i class="fas fa-fw fa-minus-square"></i>
                                         </button>
-                                        <button class="btn px-0 btn-secondary" style="width: 48px">1000</button>
-                                        <button type="button" class="btn btn-secondary py-0">
+                                        <button class="btn px-0 btn-secondary item-quantity" style="width: 48px">1000</button>
+                                        <button type="button" class="item-plus btn btn-secondary py-0">
                                             <i class="fas fa-fw fa-plus-square"></i>
                                         </button>
                                     </div>
@@ -310,18 +314,20 @@
                                 name="order-note" id="order-note"
                                 style="resize: none;" cols="30" rows="3" placeholder="Write order note..."></textarea>
                             </div>
-                            <a class="mt-3 text-decoration-none text-dark py-3 d-flex justify-content-between mb-0 bg-warning text-white h2">
+                            <a href="#" data-toggle="modal" data-target="#sendOrderModal"
+                            class="mt-3 text-decoration-none text-dark py-3 d-flex justify-content-between mb-0 bg-warning text-white h2">
                                 <i class="pl-3 fas fa-fw fa-money-check-alt"></i>
-                                <h4 class=" font-weight-bold align-self-center mb-0 pr-3">$ <span id="order-total">2.000.000</span></h4>
+                                <h4 class=" font-weight-bold align-self-center mb-0 pr-3"><span class="order-total">2.000.000</span></h4>
                             </a>
                         </section>
                     </div>
                 </section>
+                <!-- End Order Sidebar -->
+
                 <!-- Begin Page Content -->
                 <div class="container">
                     <!-- Page Heading -->
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <!-- <h1 class="h3 mb-0 text-gray-800 font-weight-bold">Menu</h1> -->
                         <div class="form-group d-flex align-items-center mb-0">
                             <select class="form-control" id="sel1">
                                 <option>All Category</option>
@@ -642,6 +648,27 @@
         </div>
     </div>
 
+    <!-- SendOrder Modal -->
+    <div class="modal fade" id="sendOrderModal" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Send Order now?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Total: <span class="order-total">20000</span></div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                    <a class="btn btn-warning font-weight-bold" href="#">
+                        Send Order <i class="fas fa-fw fa-forward"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript-->
     <script src="js/menu.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>

@@ -2,8 +2,11 @@
 #order-sidebar {
     display: none;
     min-width: 24rem;
+    top: 0;
+    bottom: 0;
     right: 0!important;
     left: auto;
+    z-index: 1000!important;
 }
 
 #hideOrder {
@@ -23,11 +26,7 @@
     max-height: 64%;
 }
 
-.order-main::-webkit-scrollbar{
-    width: 5px;
+.order-main::-webkit-scrollbar, ::-webkit-scrollbar{
+    display: none;
 }
 
-.order-main::-webkit-scrollbar-thumb {
-    height: 1px;
-    background: whitesmoke;
-}

@@ -1,10 +1,8 @@
 let orderSidebar = document.getElementById("order-sidebar");
 let orderSidebarBtn = document.getElementById("order-sidebar-btn");
-let header = document.getElementById("content");
 let hideOrderElement = document.querySelector("#hideOrder");
 
-orderSidebarBtn.addEventListener("click", DisplayOrder);
-
+// Hide & Display order sidebar section
 function DisplayOrder() {
     orderSidebar.style.display = "block";
     hideOrderElement.style.display = "block";
@@ -15,4 +13,14 @@ function HideOrder() {
     hideOrderElement.style.display = "none";
 }
 
+orderSidebarBtn.addEventListener("click", DisplayOrder);
 hideOrderElement.addEventListener("click", HideOrder);
+
+// Add to Cart section
+// item-name
+// item-price
+// item-action
+// item-minus
+// item-quantity
+// item-plus
+// #order-total

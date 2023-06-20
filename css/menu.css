@@ -1,0 +1,33 @@
+/* Order Main section */
+#order-sidebar {
+    display: none;
+    min-width: 24rem;
+    right: 0!important;
+    left: auto;
+}
+
+#hideOrder {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(106, 107, 107);
+    opacity: 10%;
+    z-index: 100!important;
+}
+
+.order-main {
+    overflow-y: scroll;
+    max-height: 64%;
+}
+
+.order-main::-webkit-scrollbar{
+    width: 5px;
+}
+
+.order-main::-webkit-scrollbar-thumb {
+    height: 1px;
+    background: whitesmoke;
+}

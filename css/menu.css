@@ -21,7 +21,7 @@
     z-index: 100!important;
 }
 
-.order-main {
+.order-list {
     overflow-y: scroll;
     max-height: 64%;
 }
@@ -30,3 +30,7 @@
     display: none;
 }
 
+/* Item content section */
+.item-quantity {
+    width: 44px!important;
+}
